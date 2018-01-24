@@ -89,7 +89,7 @@ The current goal is to reproduce the results in Xinlei's paper. The network does
    ```
 2. Train (and test, evaluation)
   ```Shell
-  python example/train_coco.py
+  python example/train_pascal.py
   ```
 
 3. Visualization with Tensorboard
