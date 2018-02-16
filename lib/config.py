@@ -40,7 +40,7 @@ cfg = __C
 __C.TRAIN = edict()
 
 # Max number of iterations
-__C.TRAIN.MAX_ITERS = 100000
+__C.TRAIN.MAX_ITERS = 100001
 
 # Initial learning rate
 __C.TRAIN.LEARNING_RATE = 0.001
@@ -99,12 +99,12 @@ __C.TRAIN.BATCH_SIZE = 128
 __C.TRAIN.FG_FRACTION = 0.25
 
 # Overlap threshold for a ROI to be considered foreground (if >= FG_THRESH)
-__C.TRAIN.FG_THRESH = 0.5
+__C.TRAIN.FG_THRESH = 0.4
 
 # Overlap threshold for a ROI to be considered background (class = 0 if
 # overlap in [LO, HI))
-__C.TRAIN.BG_THRESH_HI = 0.5
-__C.TRAIN.BG_THRESH_LO = 0.1 #0.1
+__C.TRAIN.BG_THRESH_HI = 0.4
+__C.TRAIN.BG_THRESH_LO = 0.0 #FIXME 0.1
 
 # Use horizontally-flipped images during training?
 __C.TRAIN.USE_FLIPPED = True
